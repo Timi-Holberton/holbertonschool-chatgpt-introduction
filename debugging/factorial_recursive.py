@@ -16,5 +16,9 @@ def factorial(n):
 	else:
 		return n * factorial(n-1)
 
+if len(sys.argv) != 2:
+	print("Usage: ./factorial_recursive.py <entre_un_nombre_entier_positif>")
+	sys.exit(1)
+
 f = factorial(int(sys.argv[1]))
 print(f)
